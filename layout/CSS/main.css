@@ -1,0 +1,52 @@
+
+.navbar-light .navbar-nav .spec_link {
+    color: #fff !important; 
+    
+    position: relative;
+}
+
+.navbar-light .navbar-nav .spec_link::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .spec_link:hover::after{
+    width: 100%;
+}
+
+/* the action when hover on any row in the table */
+table tbody tr:hover {
+    background: rgb(117, 117, 117) !important;
+    cursor: pointer;
+}
+
+.fa-star {
+    color:gold;
+}
+
+table tbody tr td .status_para {
+    padding:0px 10px; 
+    margin:0; 
+    font-size:18px; 
+    text-align:center;
+}
+
+@media (max-width: 992px) { 
+
+    table {
+        /* overflow-x: scroll !important; */
+        width: 1200px !important;
+    }
+
+    .total_table {
+        /* background: red; */
+        overflow-x: scroll !important;
+    }
+    
+}
